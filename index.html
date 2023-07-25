@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Note</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="bg-success">
+        <div class="flex">
+          <div class="left-nav">
+            <ul class="flex my-nav">
+              <li class="text-white my-nav-item file-title">File name</li>
+              <li class="text-white my-nav-item add-file">+</li>
+            </ul>
+          </div>
+          <div class="right">
+            <button class="btn btn-danger">Save as pdf</button>
+          </div>
+        </div>
+      </nav>
+
+      <section class="note">
+        <div class="content"></div>
+
+        <form action="">
+          <input class="note-writting" id="note-writting" type="text" placeholder="Start keeping note"/>
+        </form>
+        <canvas id="photoCanvas" style="display: none"></canvas>
+        <div class="add-btn">
+          <button id="addText">Add Text</button>
+        </div>
+
+        <div class="camera-container">
+          <video id="video" autoplay></video>
+          <canvas id="canvas" style="display: none;"></canvas>
+        </div>
+        <div class="button-container">
+          <button id="startButton">Start Camera</button>
+          <button id="captureButton" disabled>Capture Photo</button>
+          <button id="stopButton" disabled>Stop Camera</button>
+        </div>
+      
+        <div id="capturedPhotoContainer" style="display: none;">
+          <h2>Captured Photo:</h2>
+          <div id="capturedPhotoWrapper">
+            <img id="capturedPhoto" src="" alt="Captured Photo">
+          </div>
+          <button id="backToCameraButton">Back to Camera</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="Js/content_process.js"></script>
+  </body>
+</html>

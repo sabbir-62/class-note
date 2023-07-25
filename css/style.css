@@ -1,0 +1,74 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left {
+    
+}
+
+.right {
+
+}
+
+.my-nav {
+    list-style-type: none;
+}
+
+.my-nav-item {
+    padding: 10px 30px;
+}
+
+.add-file {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.note {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.note-writting {
+    width: 95vw;
+    border: none;
+    border-bottom: 1px solid yellow;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.camera-icon {
+    height: 2.2rem;
+    width: auto;
+}
+
+.camera-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    
+  }
+  
+  .button-container {
+    display: flex;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  #capturedPhotoContainer {
+    margin-top: 20px;
+  }
