@@ -47,28 +47,33 @@
 }
 
 .camera-container {
-    position: relative;
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 10px;
-  }
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+.icons {
+  height: 70px;
+  width: auto;
+}
   
-  video {
-    width: 100%;
-    height: auto;
-    
-  }
+video {
+  width: 100%;
+  height: auto;
   
-  .button-container {
-    display: flex;
-  }
-  
-  button {
-    margin: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-  }
-  
-  #capturedPhotoContainer {
-    margin-top: 20px;
-  }
+}
+
+.button-container {
+  display: flex;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#capturedPhotoContainer {
+  margin-top: 20px;
+}
