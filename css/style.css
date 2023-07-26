@@ -56,7 +56,10 @@
 }
 
 .add-btn {
+<<<<<<< HEAD
   margin-top: 2vh;
+=======
+>>>>>>> 080651b0c33798e02c3bd0cd167b3b5d6fdb03b5
   margin-bottom: 2vh;
 }
   
@@ -77,6 +80,7 @@ button {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 #all-btn{
   position: relative;
   top: -200px;
@@ -96,3 +100,12 @@ button {
   position: relative;
   top: 0;
 } */
+=======
+#capturedPhotoContainer {
+  margin-top: 20px;
+}
+
+.camera-container {
+  display: none;
+}
+>>>>>>> 080651b0c33798e02c3bd0cd167b3b5d6fdb03b5
