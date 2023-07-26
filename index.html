@@ -30,27 +30,35 @@
         <form action="">
           <input class="note-writting" id="note-writting" type="text" placeholder="Start keeping note"/>
         </form>
-        <canvas id="photoCanvas" style="display: none"></canvas>
         <div class="add-btn">
-          <button id="addText">Add Text</button>
+          <button class="btn btn-success add-btn" id="addText">Add Text</button>
         </div>
 
         <div class="camera-container">
           <video id="video" autoplay></video>
           <canvas id="canvas" style="display: none;"></canvas>
         </div>
-        <div class="button-container">
-          <button id="startButton">Start Camera</button>
-          <button id="captureButton" disabled>Capture Photo</button>
-          <button id="stopButton" disabled>Stop Camera</button>
-        </div>
-      
-        <div id="capturedPhotoContainer" style="display: none;">
-          <h2>Captured Photo:</h2>
-          <div id="capturedPhotoWrapper">
-            <img id="capturedPhoto" src="" alt="Captured Photo">
+        
+        <div class="all-btn" id="all-btn">
+          <div class="button-container">
+            <button class="my-btn" id="startButton">
+              <img class="icons" src="img/camera.png" alt="">
+            </button>
+            <button class="my-btn" id="captureButton">
+              <img class="icons" src="img/capture.png" alt="">
+            </button>
+            <button class="my-btn" id="stopButton">
+              <img class="icons" src="img/cancel.png" alt="">
+            </button>
           </div>
-          <button id="backToCameraButton">Back to Camera</button>
+        
+          <div id="capturedPhotoContainer" style="display: none;">
+            <h2>Captured Photo:</h2>
+            <div id="capturedPhotoWrapper">
+              <img id="capturedPhoto" src="" alt="Captured Photo">
+            </div>
+            <button id="backToCameraButton">Back to Camera</button>
+          </div>
         </div>
       </section>
     </div>

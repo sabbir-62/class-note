@@ -103,3 +103,63 @@ startButton.addEventListener('click', startCamera);
 captureButton.addEventListener('click', capturePhoto);
 stopButton.addEventListener('click', stopCamera);
 backToCameraButton.addEventListener('click', backToCamera);
+
+
+
+// btn btn
+var count = 0;
+
+const startBtn = document.getElementById('startButton');
+startBtn.addEventListener('click', function() {
+    const allBtn = document.getElementById('all-btn');
+    
+  
+    // Move each individual button inside .button-container
+    var buttons = allBtn.getElementsByClassName('my-btn');
+    
+    if(count == 0){
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].style.transform = 'translateY(250px)';
+        }
+        count = 1;
+    }
+  });
+
+
+
+  const captureBtn = document.getElementById('captureButton');
+  captureBtn.addEventListener('click', function() {
+      const allBtn = document.getElementById('all-btn');
+      
+    
+      // Move each individual button inside .button-container
+      var buttons = allBtn.getElementsByClassName('my-btn');
+  
+      if(count == 1){
+          for (var i = 0; i < buttons.length; i++) {
+              buttons[i].style.transform = 'translateY(-10px)';
+          }
+          count = 0;
+      }
+    });
+  
+
+    
+  const stopBtn = document.getElementById('stopButton');
+  stopBtn.addEventListener('click', function() {
+      const allBtn = document.getElementById('all-btn');
+      
+    
+      // Move each individual button inside .button-container
+      var buttons = allBtn.getElementsByClassName('my-btn');
+  
+      if(count == 1){
+          for (var i = 0; i < buttons.length; i++) {
+              buttons[i].style.transform = 'translateY(-10px)';
+          }
+          count = 0;
+      }
+    });
+  
+  
+  
