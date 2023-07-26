@@ -53,10 +53,18 @@
   margin-bottom: 10px;
 }
 
-
 .icons {
-  height: 70px;
+  height: 40px;
   width: auto;
+}
+
+.my-btn {
+  outline: none;
+  border: none;
+}
+
+.add-btn {
+  margin-bottom: 2vh;
 }
   
 video {
@@ -67,6 +75,7 @@ video {
 
 .button-container {
   display: flex;
+  align-items: center;
 }
 
 button {
@@ -77,4 +86,8 @@ button {
 
 #capturedPhotoContainer {
   margin-top: 20px;
+}
+
+.camera-container {
+  display: none;
 }
