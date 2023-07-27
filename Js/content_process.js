@@ -163,3 +163,26 @@ startBtn.addEventListener('click', function() {
   
   
   
+   //Save as pdf
+    const saveAsPdfButton = document.querySelector('.btn-danger');
+    saveAsPdfButton.addEventListener('click', saveAsPdf);
+
+
+    function saveAsPdf() {
+        // Get the content div element
+        const contentDiv = document.querySelector('.content');
+      
+        // Use html2pdf library to generate the PDF
+        const opt = {
+          margin: 10,
+          filename: 'class_note.pdf',
+          image: { type: 'jpeg', quality: 0.98 },
+          html2canvas: { scale: 2 },
+          jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        };
+      
+        // Create the PDF
+        html2pdf().from(contentDiv).set(opt).save();
+      }
+      
+    
