@@ -125,8 +125,11 @@ button {
     width: 100%;
   }
 
-  #all-btn {
-    top: 0;
+  #all-btn{
+    position: relative;
+    top: -230px;
+    transition: top 0.3s ease-in-out;
+
   }
 
   .button-container {
