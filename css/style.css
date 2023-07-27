@@ -96,6 +96,52 @@ button {
   display: block;
   margin: 30px 0;
 }
+
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .my-nav-item {
+    padding: 10px 15px;
+  }
+
+  .note-writting {
+    width: 90vw;
+    margin: 15px;
+  }
+
+  .camera-container {
+    max-width: 100%;
+  }
+
+  .content {
+    width: 80%;
+  }
+
+  .content > img {
+    width: 100%;
+  }
+
+  #all-btn {
+    top: 0;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  button {
+    margin: 5px 0;
+  }
+
+  .add-btn {
+    margin: 10px 0;
+  }
+}
+
 /* 
 .moved {
   position: relative;
