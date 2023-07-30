@@ -3,6 +3,13 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    height: 10vh;
+}
+
+.flex > h1{
+  color: white;
+  font-family: 'Lobster Two', cursive;
+  font-weight: 500;
 }
 
 .my-nav {
